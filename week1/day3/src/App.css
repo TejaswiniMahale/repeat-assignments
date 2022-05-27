@@ -1,0 +1,43 @@
+.mainDiv{
+    width:650px;
+    height: 350px;
+    margin: auto;
+    background-color: orange;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.date{
+    font-size: 20px ;
+    margin-bottom: 30px;
+}
+.buttonDiv{
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.headDiv{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.subhead{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.device{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.logo{
+    width: 100px;
+}
+
