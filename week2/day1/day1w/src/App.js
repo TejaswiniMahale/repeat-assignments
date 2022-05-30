@@ -15,7 +15,7 @@ import axios from "axios"
   // },[])
   useEffect(()=>{
     
-    axios.get(`http://localhost:3000/teju?_page=${page}&_limit=2`).then((r)=>{
+    axios.get(`http://localhost:3000/teju?_page=${page}&_limit=5`).then((r)=>{
     setTodos(r.data)
     console.log(r.data)
   })
