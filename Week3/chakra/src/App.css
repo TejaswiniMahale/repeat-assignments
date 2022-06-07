@@ -1,0 +1,21 @@
+.card{
+  border: 1px solid black;
+  width: 550px;
+  height: 350px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 20px;
+}
+.visa{
+  margin-left: 390px;
+  font-size: 50px;
+}
+.name{
+  font-size: 30px;
+  justify-content: last baseline;
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-around;
+}

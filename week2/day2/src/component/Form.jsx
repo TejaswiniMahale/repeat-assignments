@@ -6,26 +6,25 @@ const Form = () => {
      email:"",
      password:"",
      age:0,
-     isIndian:true,
-     gender:false,
-     resume:""
-    })
+     isIndian:false,
+   
+    });
     //mapping input with unique identifire
     //onchange im getting unique identifire and the latest value
     // updating form where key = unique identifire and value = new value
     const handleOnChange=(e)=>{
-        let {name,value,type,checked,file}=e.target
-        console.log(type,name,value,checked,file)
+        let {name,value,type,checked,files}=e.target
+        //console.log(type,name,value,checked,files)
         if(type==="checkbox"){
             setForm({
                 ...form,
                 [name]:checked,
             })
         }
-       else  if(type==="file"){
+       else if(type==="file"){
             setForm({
                 ...form,
-                [name]:file,
+                [name]:files,
             })
         }
         else(
@@ -35,11 +34,11 @@ const Form = () => {
             })
         )
     }
-    // useEffect(()=>{
-    //     console.log(form)
-    // },[form])
+    useEffect(()=>{
+        console.log(form)
+    },[form])
   return (
-    <>
+    <div className="completeForm">
         <div>Form</div>
         <form>
         <div>
@@ -87,28 +86,29 @@ const Form = () => {
             <label>Female</label>
             <input type="radio" 
                 name="gender"
-                value={form.name}
-                onchange={handleOnChange}
+                value="female"
+                onChange={handleOnChange}
             />
         </div>
         <div>
             <label>Male</label>
             <input type="radio" 
                 name="gender"
-                value={form.name}
-                onchange={handleOnChange}
+                value="male"
+                onChange={handleOnChange}
             />
         </div>
         <div>
         <label>User Resume:</label>
         <input type="file" 
             name="resume"
-            value={form.name}
-            onchange={handleOnChange}
+            accept='image/png ,image/jpeg ,pdf'
+            files={form.name}
+            onChange={handleOnChange}
         />
         </div>
         </form>
-    </>
+    </div>
   )
 }
 
