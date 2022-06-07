@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "name":"Teju",
+      "age":22,
+      "address":"okk",
+      "department": "fsd",
+      "salary":40000,
+      "marrital Status": "single"
+      
+
+    }
+  ]
+}
