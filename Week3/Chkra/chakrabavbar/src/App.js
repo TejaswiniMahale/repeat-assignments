@@ -1,11 +1,19 @@
 
-import { Box, Button, Collapse, Container, Menu, MenuButton, MenuDivider, MenuGroup, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react';
+
+import {  Button, Menu, MenuButton, MenuDivider, MenuGroup, MenuItem, MenuList } from '@chakra-ui/react';
 import './App.css';
+import { PhoneIcon} from '@chakra-ui/icons'
+import { DragHandleIcon } from '@chakra-ui/icons';
+import { BellIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { StarIcon } from '@chakra-ui/icons';
+import { SettingsIcon } from '@chakra-ui/icons';
 
 function App() {
   
   return (
-   <div className='main'>
+   <div>
+     <div className='main'>
    <div><h1 style={{font:"20px solid black"}}>Logo</h1></div>
    <div>
       
@@ -56,6 +64,21 @@ function App() {
    </div>
    <div>
    <Button colorScheme='pink'>Sign Up</Button>
+   </div>
+   </div>
+   <div style={{borderRight:"1px solid black",width:"250px",height:"700px",padding:"30px"}}>
+   <h1 style={{font:"25px solid black",padding:"20px"}}>Logo</h1>
+   <Button style={{width:"170px",marginBottom:"20px"}}><DragHandleIcon/>Home</Button>
+   <br></br>
+   <Button style={{width:"170px",marginBottom:"20px"}}><BellIcon/>Trending</Button>
+   <br></br>
+   <Button style={{width:"170px",marginBottom:"20px"}}><ExternalLinkIcon/>Explore</Button>
+   <br></br>
+   <Button style={{width:"170px",marginBottom:"20px"}}><StarIcon/>Fovorite</Button>
+   <br></br>
+   <Button style={{width:"170px",marginBottom:"20px"}}><SettingsIcon/>Setting</Button>
+   <br></br>
+   
    </div>
    </div>
   );
